@@ -21,8 +21,8 @@ namespace debugws2
 
     private int cnv(string val)
     {
-      Int32.TryParse(val, NumberStyles.HexNumber, CultureInfo.InvariantCulture, out int value);
-
+      bool converted  = Int32.TryParse(val, NumberStyles.HexNumber, CultureInfo.InvariantCulture, out int value)
+     
       return value;
     }
 
